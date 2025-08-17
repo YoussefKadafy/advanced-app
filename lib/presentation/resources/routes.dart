@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:new_app/presentation/forgot_password/forgot_password_view.dart';
 import 'package:new_app/presentation/home/home_view.dart';
 import 'package:new_app/presentation/login/login_view.dart';
+import 'package:new_app/presentation/onboarding/onboarding_view.dart';
 import 'package:new_app/presentation/register/register_view.dart';
 import 'package:new_app/presentation/resources/strings_manager.dart';
 import 'package:new_app/presentation/splash/splash_view.dart';
@@ -32,6 +33,8 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => HomeView());
       case Routes.storeDetailsRoute:
         return MaterialPageRoute(builder: (_) => StoreDetailsView());
+      case Routes.onBoardingViewRoute:
+        return MaterialPageRoute(builder: (_) => OnboardingView());
       default:
         return unknownRoute();
     }
